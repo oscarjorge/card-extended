@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
-import { CardExtendedComponent } from './card-extended.component';
+import { CardExtendedComponent, CardExtendedActions, CardExtendedCollapser, CardExtendedCustomSubTitle, CardExtendedCustomTitle, CardExtendedIcon, CardExtendedPanel, CardExtendedSubHeader, CardExtendedSubTitle, CardExtendedTitle } from './card-extended.component';
 
 @NgModule({
-  declarations: [CardExtendedComponent],
+  declarations: [CardExtendedComponent, CardExtendedActions, CardExtendedCollapser, CardExtendedCustomSubTitle, CardExtendedCustomTitle, CardExtendedIcon, CardExtendedPanel, CardExtendedSubHeader, CardExtendedSubTitle, CardExtendedTitle],
   imports: [
   ],
-  exports: [CardExtendedComponent]
+  exports: [CardExtendedComponent, CardExtendedActions, CardExtendedCollapser, CardExtendedCustomSubTitle, CardExtendedCustomTitle, CardExtendedIcon, CardExtendedPanel, CardExtendedSubHeader, CardExtendedSubTitle, CardExtendedTitle]
 })
 export class CardExtendedModule { }
