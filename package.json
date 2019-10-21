@@ -1,5 +1,6 @@
 {
   "name": "angular-library",
+  "description": "Un simple plugin de angular que extiende al componente card de Angular Material",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -9,7 +10,35 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
+  "license": "MIT",
   "private": true,
+  "keywords": [
+    "ng",
+    "ngx",
+    "angular",
+    "angular2",
+    "angular 2",
+    "angular4",
+    "angular 4",
+    "angular5",
+    "angular 5",
+    "angular6",
+    "angular 6",
+    "angular 7",
+    "angular 8",
+    "angular material",
+    "card",
+    "extended"
+  ],
+  "author": {
+    "name": "Óscar Jorge Castillo",
+    "email": "oscarjorgecastillo@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscarjorge/card-extended.git"
+  },
+  "homepage": "https://github.com/oscarjorge/card-extended#readme",
   "dependencies": {
     "@angular/animations": "~8.2.11",
     "@angular/cdk": "~8.2.3",

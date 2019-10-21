@@ -1,6 +1,36 @@
 {
   "name": "card-extended",
+  "description": "Un simple plugin de angular que extiende al componente card de Angular Material",
   "version": "0.0.1",
+  "license": "MIT",
+  "private": true,
+  "keywords": [
+    "ng",
+    "ngx",
+    "angular",
+    "angular2",
+    "angular 2",
+    "angular4",
+    "angular 4",
+    "angular5",
+    "angular 5",
+    "angular6",
+    "angular 6",
+    "angular 7",
+    "angular 8",
+    "angular material",
+    "card",
+    "extended"
+  ],
+  "author": {
+    "name": "Óscar Jorge Castillo",
+    "email": "oscarjorgecastillo@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscarjorge/card-extended.git"
+  },
+  "homepage": "https://github.com/oscarjorge/card-extended#readme",
   "peerDependencies": {
     "@angular/common": "~8.2.11",
     "@angular/core": "~8.2.11",
