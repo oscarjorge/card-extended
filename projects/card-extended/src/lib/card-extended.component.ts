@@ -71,8 +71,6 @@ export abstract class CardBaseComponent implements ICard {
 
 export class CardExtendedTitle { }
 
-
-
 @Component({
 
   selector: 'card-extended-subtitle',
