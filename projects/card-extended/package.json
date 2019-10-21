@@ -1,7 +1,7 @@
 {
   "name": "card-extended",
   "description": "Un simple plugin de angular que extiende al componente card de Angular Material",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "private": true,
   "keywords": [
