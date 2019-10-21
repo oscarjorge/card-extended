@@ -1,0 +1,61 @@
+<div class="mat-elevation-z2">
+
+  <div class="first-row">
+
+      <div class="left" (click)="onClickHeader()" [ngClass]="{'pointer': expandable && expandableHeader && !waitExpand}">
+
+          <span [@disabledIconState]="_getExpandedState()">
+
+              <ng-content select="card-extended-icon"></ng-content>
+
+          </span>
+
+          <span>
+
+              <div>
+
+                  <ng-content select="card-extended-title"></ng-content>
+
+                  <ng-content select="card-extended-custom-title"></ng-content>
+
+              </div>
+
+              <div>
+
+                  <ng-content select="card-extended-subtitle"></ng-content>
+
+              </div>
+
+          </span>
+
+      </div>
+
+      <div class="right">
+
+          <ng-content select="card-extended-actions"></ng-content>
+
+          <mat-icon *ngIf="expandable && hasChildren()" [@indicatorRotate]="_getExpandedStateAll()" [color]="'primary'" class="pointer" (click)="clickRotatorChildren()">
+
+                  keyboard_capslock</mat-icon>
+
+          <card-extended-collapser (onClickRotator)="toggle()" [@indicatorRotate]="_getExpandedState()" [expansion-async]="expansionAsync" [expandable]="expandable" [wait-expand]="waitExpand" [expanded]="expanded"></card-extended-collapser>
+
+      </div>
+
+  </div>
+
+  <div class="second-row">
+
+      <ng-content select="card-extended-subheader"></ng-content>
+
+  </div>
+
+  <div class="card-extended-panel-container" [@bodyExpansion]="_getExpandedState()"
+
+  (@bodyExpansion.done)="bodyExpansionDoneEvent.next($event)" (@bodyExpansion.start)="bodyExpansionStartedEvent($event)" >
+
+      <ng-content select="card-extended-panel"></ng-content>
+
+  </div>
+
+</div>

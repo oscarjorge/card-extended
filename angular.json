@@ -133,6 +133,41 @@
           }
         }
       }
+    },
+    "card-extended": {
+      "root": "projects/card-extended",
+      "sourceRoot": "projects/card-extended/src",
+      "projectType": "library",
+      "prefix": "ce",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/card-extended/tsconfig.lib.json",
+            "project": "projects/card-extended/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/card-extended/src/test.ts",
+            "tsConfig": "projects/card-extended/tsconfig.spec.json",
+            "karmaConfig": "projects/card-extended/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/card-extended/tsconfig.lib.json",
+              "projects/card-extended/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "angular-library"
