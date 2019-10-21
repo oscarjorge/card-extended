@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation, Directive, ChangeDetectionStrategy, Host, Input, Output, EventEmitter, ContentChild, ViewChild, AfterContentInit, ContentChildren, QueryList, AfterViewInit, ChangeDetectorRef, Renderer2 } from '@angular/core';
+import { Component, ViewEncapsulation, ChangeDetectionStrategy, Input, Output, EventEmitter, ViewChild, AfterContentInit, ContentChildren, ChangeDetectorRef, Renderer2, QueryList } from '@angular/core';
 
 import { AnimationEvent } from '@angular/animations';
 
